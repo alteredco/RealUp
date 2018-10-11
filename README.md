@@ -6,9 +6,9 @@ MomsCanCodepgh Hackathon Application
 ### Install latest version of node:
 
 ```
-nvm install 10.11.0
-nvm use 10.11.0
-nvm alias default 10.11.0
+npm install 10.11.0
+npm use 10.11.0
+npm alias default 10.11.0
 node -v
 ```
 
