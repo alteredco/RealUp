@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Home from './pages/home.js';
+import Home1 from './pages/home1.js';
 
 
-const App =() => <Home /> ;
+const App =() => <Home1 /> ;
 
 export default App;
