@@ -7,11 +7,6 @@ const QuotesBtn = props => (
 <button className="btn-float" onClick={props.onClick} >
             {props.label}
 </button> 
-
-
-//   <span className="quotes-btn btn-float" {...props}>
-// +
-//   </span>
 );
 
 export default QuotesBtn;

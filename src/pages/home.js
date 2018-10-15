@@ -8,20 +8,7 @@ import QuotesBtn from "../components/QuotesBtn";
           </div>
         )
       }
-      
-//       const QuotesButton = (props) => {
-//           return(
-// /* <a className="btn-float" {...props}>
-// <i className="material-icons">delete</i>
-// </a> */
 
-//           <button className="btn-float" onClick={props.onClick} >
-//            {props.label}
-
-//           </button>
-
-//           )
-//       }
       
       const Result = (props) => {
         return (
