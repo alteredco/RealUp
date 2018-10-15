@@ -3,6 +3,7 @@ import React, {Component} from "react";
 import SetInterval from '../../components/SetInterval/SetInterval';
 import Button from "../../components/Button";
 import {Link } from 'react-router-dom';
+import RandQuote from '../../components/RandQuotes/RandQuote';
 
 
 class Home1 extends Component {
@@ -14,6 +15,7 @@ class Home1 extends Component {
         <img alt="logo placeholder" src="./assets/images/REALUPLOGO1-1.png" />
         </div>
         <div><SetInterval /></div>
+        <div className="center-align"><RandQuote /></div>
     
        <div className="col s6 center-align">
 
