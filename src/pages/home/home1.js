@@ -6,7 +6,7 @@ class Home1 extends Component {
     return (
       <div className="row">
        <div className="logo-img">
-        <img alt="logo placeholder" src="https://ibb.co/bEJAQf" />
+        <img alt="logo placeholder" src="./assets/images/REALUPLOGO1-1.png" />
         </div>
         <div><SetInterval /></div>
       </div>
