@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 // import logo from '../../../public/assets/images/momscancodepghlogo.jpg';
 import SetInterval from '../../components/SetInterval/SetInterval';
-import Button from "../../components/Button";
-import {Link } from 'react-router-dom';
+// import Button from "../../components/Button";
+// import {Link } from 'react-router-dom';
 import RandQuote from '../../components/RandQuotes/RandQuote';
 
 
@@ -17,12 +17,6 @@ class Home1 extends Component {
         <div><SetInterval /></div>
         <div className="center-align"><RandQuote /></div>
     
-       <div className="col s6 center-align">
-
-        <Link to="/home2">
-                    <Button label="Let's Get Started"/>
-        </Link>	
-      </div>
       </div>
        
     )
