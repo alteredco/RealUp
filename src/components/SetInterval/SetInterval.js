@@ -1,31 +1,25 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 
 class SetInterval extends Component {
-  constructor(props){
-    super(props);
-    this.state = {currentCount: 3}
+  state = {
+    redirect: false
   }
-  timer() {
-    this.setState({
-      currentCount: this.state.currentCount - 1
-    })
-    if(this.state.currentCount < 1) { 
-      clearInterval(this.intervalId);
-      
-    }
-  }
+
   componentDidMount() {
-    this.intervalId = setInterval(this.timer.bind(this), 1000);
+    this.id = setTimeout(() => this.setState({ redirect: true }), 3000)
   }
-  componentWillUnmount(){
-    
-    clearInterval(this.intervalId);
+
+  componentWillUnmount() {
+    clearTimeout(this.id)
   }
+
   render() {
-    return(
-      <div>{this.state.currentCount}</div>
-    );
+    return this.state.redirect
+      ? <Redirect to="/home2" />
+      : <div>Content</div>
   }
 }
+
 
 export default SetInterval;

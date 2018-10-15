@@ -12,7 +12,7 @@ ReactDOM.render(
    
   <BrowserRouter>
     <div>
-        <Nav></Nav>
+    <Nav></Nav>
       <Switch>
        {/*  /* IMPORTANT! add any other routes ABOVE the home1 Route !*/ }
        <Route path="/home2" component={Home2} />
