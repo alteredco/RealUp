@@ -15,7 +15,7 @@ ReactDOM.render(
         <Nav></Nav>
       <Switch>
        {/*  /* IMPORTANT! add any other routes ABOVE the home1 Route !*/ }
-       <Route path="/" component={Home2} />
+       <Route path="/home2" component={Home2} />
        <Route exact path="/" component={Home1} />        
       </Switch>
     </div> 
