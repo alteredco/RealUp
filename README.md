@@ -55,7 +55,8 @@ pages/about
 ### Git strategy to reduce conflicts! 
 Always create a branch first
 ```
-git branch -b your-branch
+git branch your-branch
+git checkout your-branch
 ```
 This will create and switch to your branch
 Never push to master and merge a non working app to master.
