@@ -1,4 +1,4 @@
-## RealUp App: React App to solve the issue of Imposter Syndrome using therapeutic exercises, quotes and action plans.
+## RealUp App: React App to solve the issue of Impostor Syndrome using therapeutic exercises, quotes and action plans.
 MomsCanCodepgh Hackathon Application
 
 ### Github repo: https://github.com/alteredco/RealUp.git
