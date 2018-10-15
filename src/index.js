@@ -8,7 +8,7 @@ ReactDOM.render(
   <BrowserRouter>
     <div>
       <Switch>
-       {/*  /* IMPORTANT! add any other routes ABOVE the home1 Route !*/ */}
+       {/*  /* IMPORTANT! add any other routes ABOVE the home1 Route !*/ }
         <Route path="/" component={Home1} />
       </Switch>
     </div>
