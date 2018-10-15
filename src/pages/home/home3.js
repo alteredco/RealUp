@@ -7,9 +7,9 @@ class Home3 extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      home3Txt: "Placeholder text home page 3",
-      home3Btn: "Let's Get Started",
-       
+      home3Txt: "What do you need help with?",
+      thoughts1Btn: "Impostor Thoughts",
+      feelings1Btn: "Impostor Feelings"       
     }
   }
 
@@ -17,18 +17,25 @@ class Home3 extends Component {
 
   render() {
     return (
-      <div className="row">
-        <div>
+      <div className="row center-align">
+        <div className="row">
           <TextLines text={this.state.home3Txt} />
         </div>
        <div>
-       <div>  
-          <Link to="/home3">
-              <Button label={this.state.home3Btn}/>
+       <div className="row">  
+          <Link to="/thoughts1">
+              <Button label={this.state.thoughts1Btn}/>
           </Link>	
         </div>
+       
+        <div>  
+          <Link to="/feelings1">
+              <Button label={this.state.feelings1Btn}/>
+          </Link>	
+        </div>
+        </div>
        </div>
-      </div>
+  
 
       
     )
