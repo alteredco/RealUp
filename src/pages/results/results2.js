@@ -7,7 +7,7 @@ class Results2 extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      results2TitleTxt: "Just Breathe",
+      results2TitleTxt: "JUST BREATHE",
       results2Txt: "As you do this breathing exercise, imagine you're releasing whatever it is your holding on to.",
       results2Txt1: "Breathe in for 1,2,3,4,5",
       results2Txt2: "Breathe out for 1,2,3,4,5",
