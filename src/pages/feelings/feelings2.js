@@ -10,7 +10,7 @@ class Feelings2 extends Component {
       this.state = {
           feelings2Quest1: "How do you feel in this moment",
           feelings2Quest2: "Where in your body do you feel this",
-          feelings2Quest3: "How would you help a fried feeling this way",
+          feelings2Quest3: "How would you help a friend feeling this way",
           feelings2Placeholder1: "I'm feeling stressed, anxious, nervous",
           feelings2Placeholder2: "My neck, my back",
           feelings2Placeholder3: "",
