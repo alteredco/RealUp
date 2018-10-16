@@ -8,7 +8,7 @@ import Home3 from './pages/home/home3.js';
 import Thoughts1 from './pages/thoughts/thoughts1.js';
 import Thoughts3 from './pages/thoughts/thoughts3';
 import Results1 from './pages/results/results1.js';
-
+import Results2 from './pages/results/results2.js';
 
 
 
@@ -17,9 +17,10 @@ ReactDOM.render(
    
   <BrowserRouter>
     <div>
-    <Nav></Nav>
+      <Nav></Nav>
       <Switch>
        {/*  /* IMPORTANT! add any other routes ABOVE the home1 Route !*/ }
+       <Route path="/results2" component={Results2} />
        <Route path="/results1" component={Results1} />
        <Route path="/thoughts3" component={Thoughts3} />
        <Route path="/thoughts1" component={Thoughts1} />
