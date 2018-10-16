@@ -151,5 +151,7 @@ When you checkout master, you also have to pull (also a pull is same as a git Fe
 
 This sounds complicated but believe me this works!! There are many more commands we may beed to use, but this is the every day, team coding startegy!
 
+Installing Materialize:
+https://materializecss.com/getting-started.html
 
 ### Directory structure
