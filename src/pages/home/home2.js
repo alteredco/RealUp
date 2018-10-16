@@ -17,12 +17,12 @@ class Home2 extends Component {
 
   render() {
     return (
-      <div className="row">
-        <div>
+      <div className="row center-align">
+        <div className="row">
           <TextLines text={this.state.home2Txt} />
         </div>
        <div>
-       <div>  
+       <div className="row">  
           <Link to="/home3">
               <Button label={this.state.home2Btn}/>
           </Link>	
