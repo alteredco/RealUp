@@ -11,6 +11,7 @@ import Thoughts3 from './pages/thoughts/thoughts3';
 import Results1 from './pages/results/results1.js';
 import Results2 from './pages/results/results2.js';
 import Results3 from './pages/results/results3.js';
+import Feelings2 from './pages/feelings/feelings2';
 import Feelings3 from './pages/feelings/feelings3';
 
 
@@ -26,6 +27,7 @@ ReactDOM.render(
        <Route path="/results2" component={Results2} />
        <Route path="/results1" component={Results1} />
        <Route path="/feelings3" component={Feelings3} />
+       <Route path="/feelings2" component={Feelings2} />
        <Route path="/thoughts3" component={Thoughts3} />
        <Route path="/thoughts2" component={Thoughts2} />
        <Route path="/thoughts1" component={Thoughts1} />
