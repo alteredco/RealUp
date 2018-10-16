@@ -14,7 +14,7 @@ class Feelings2 extends Component {
           feelings2Placeholder1: "I'm feeling stressed, anxious, nervous",
           feelings2Placeholder2: "My neck, my back",
           feelings2Placeholder3: "",
-
+          feelings2Txt: "Focus on the feeling with kindness and curiosity and then let it go.",
           feelings3Btn: "Next",        
         }
       }
@@ -39,7 +39,7 @@ class Feelings2 extends Component {
               </form>
           </div> 
           <div className="row center-align">
-              <TextLines label={this.state.feelings3Btn}/>
+              <TextLines text={this.state.feelings2Txt}/>
           </div> 
           <div className="row center-align">
               <Link to="/feelings3"><Button label={this.state.feelings3Btn}/></Link>
