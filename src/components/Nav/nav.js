@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button";
+import "./nav.css";
 
 
 
@@ -10,6 +11,7 @@ class Nav extends React.Component {
         super(props);
         this.goBack=this.goBack.bind(this);
         this.backBtnText="Back";
+        this.id="backbutton";
     }
 
     goBack(){
@@ -21,7 +23,7 @@ class Nav extends React.Component {
     <div className="container">
 
         <div className="center-align"> 
-            <Button className="left-align" label={this.backBtnText} onClick={this.goBack}/>
+            <Button label={this.backBtnText} onClick={this.goBack} id={this.id}/>
 		<Link to="/">
             <img height="200px" width="200px" alt="logo placeholder" src="./assets/images/REALUPLOGO1-1.png" />
         </Link>	
