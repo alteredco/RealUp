@@ -21,7 +21,7 @@ class Results1 extends Component {
         <div className="row">
           <TextLines text={this.state.results1Txt} />
         </div>
-       <div>
+        
        <div className="row">  
           <Link to="/results3">
               <Button label={this.state.results2Btn}/>
@@ -33,7 +33,7 @@ class Results1 extends Component {
               <Button label={this.state.results3Btn}/>
           </Link>	
         </div>
-        </div>
+    
        </div>
   
 
