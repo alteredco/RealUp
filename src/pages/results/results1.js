@@ -23,13 +23,13 @@ class Results1 extends Component {
         </div>
        <div>
        <div className="row">  
-          <Link to="/results2">
+          <Link to="/results3">
               <Button label={this.state.results2Btn}/>
           </Link>	
         </div>
        
         <div>  
-          <Link to="/results3">
+          <Link to="/results2">
               <Button label={this.state.results3Btn}/>
           </Link>	
         </div>
