@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import TextLines from '../../components/TextLines/TextLines';
 import Button from '../../components/Button/Button';
+import Timer from '../../components/Timer/Timer';
 import {Link } from 'react-router-dom';
+
 
 class Thoughts3 extends Component {
   constructor(props) {
@@ -36,8 +38,7 @@ class Thoughts3 extends Component {
                 <li><TextLines  text={this.state.thoughts3Txt8} /></li>
             </ul>
             <div className="row"><TextLines  text={this.state.thoughts3Instr} /></div>
-            {/* <div className="row"><Timer minutes ={this.state.minutes} seconds={this.state.seconds} miliseconds={this.state.miliseconds} /></div> */}
-            <div className="row"><Button label={this.state.startBtn}/></div>
+            <div className="row"><Timer  /></div>
             <div className="row"><Link to="/results1"><Button label={this.state.results1Btn}/></Link></div>
         </div>
       )
