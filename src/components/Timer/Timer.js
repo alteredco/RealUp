@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
-import Button from '../Button/Button';
 
 class Timer extends Component {
   constructor(props){
     super(props);
     this.state = {
       seconds: '00',  
-      minutes: '02' 
+      minutes: '2' 
     }
     this.tick = this.tick.bind(this);
+    this.startTimer = this.startTimer.bind(this);
+  }
+  startTimer() {
+    if (this.state.minutes === "2" && this.state.seconds === "00") {
+      this.intervalHandle = setInterval(this.tick, 1000);
+      let time = this.state.minutes;
+      this.secondsRemaining = time * 60;
+    }
   }
   tick() {
     let min = Math.floor(this.secondsRemaining / 60);
@@ -32,11 +39,6 @@ class Timer extends Component {
       }
       this.secondsRemaining--
   }
-  componentDidMount() {
-    this.intervalHandle = setInterval(this.tick, 1000);
-    let time = this.state.minutes;
-    this.secondsRemaining = time * 60;
-  }
   componentWillUnmount(){
     clearInterval(this.intervalId);
   }
@@ -44,7 +46,8 @@ class Timer extends Component {
   render() {
     return(
       <div>
-      <div className="row">{this.state.minutes}:{this.state.seconds}</div>
+      <button className="btn-floating btn-large green" onClick={this.startTimer}>START</button>
+      <div className="row"><h2>{this.state.minutes}:{this.state.seconds}</h2></div>
       </div>
     );
   }
