@@ -6,7 +6,7 @@ import "./InputListItem.css";
 const InputListItem = props => (
     <div class="row">
         <div class="input-field col s6">
-            <label>{props.label}</label>  
+            <label class="active">{props.label}</label>  
             <input
                 type="text"
                 placeholder={props.placeholder}
