@@ -21,13 +21,12 @@ class Home2 extends Component {
         <div className="row">
           <TextLines text={this.state.home2Txt} />
         </div>
-       <div>
+    
        <div className="row">  
           <Link to="/home3">
               <Button label={this.state.home2Btn}/>
           </Link>	
         </div>
-       </div>
       </div>
 
       
