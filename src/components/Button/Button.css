@@ -1,12 +1,12 @@
 .btn-float {
     background: #292727;
     text-decoration: none;
-    color: white;
+    color: white !important;;
     display: inline-block;
     font-size: 15px;
     margin: none;
     padding: 10px 10px 9px 10px;
-    width: 125px;
+    width: 200px;
     font-family: avenir;
 }
 /*#backbutton {
