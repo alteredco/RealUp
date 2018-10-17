@@ -20,9 +20,9 @@ class Thoughts2 extends Component {
       }
     render() {
       return (
-        <div>
-          <div class="row center-align">
-            <form class="col s8">
+        <div className="container">
+          <div className="row center-align">
+            <form>
               <InputListItem
                   label={this.state.thoughts2Quest1} 
                   placeholder={this.state.thoughts2Placeholder1} />
@@ -42,7 +42,7 @@ class Thoughts2 extends Component {
               </form>
           </div> 
 
-          <div class="row center-align">
+          <div className="row center-align">
               <Link to="/thoughts3"><Button label={this.state.thoughts3Btn}/></Link>
           </div>  
         </div>  

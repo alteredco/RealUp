@@ -19,15 +19,17 @@ class Feelings3 extends Component {
     }
     render() {
       return (
-        <div className="row center-align">
-            <div className="row"><TextLines text={this.state.feelings3Title} /></div>
-            <ol>
-                <li>{this.state.feelings3Txt1}</li>
-                <li>{this.state.feelings3Txt2}</li>
-            </ol>
-            <div className="row"><TextLines  text={this.state.feelings3Instr} /></div>
-            <div ><Timer  /></div>
-            <div className="row"><Link to="/results1"><Button label={this.state.results1Btn}/></Link></div>
+        <div className="container">
+          <div className="row center-align">
+              <div className="row"><TextLines text={this.state.feelings3Title} /></div>
+              <ol>
+                  <li>{this.state.feelings3Txt1}</li>
+                  <li>{this.state.feelings3Txt2}</li>
+              </ol>
+              <div className="row"><TextLines  text={this.state.feelings3Instr} /></div>
+              <div ><Timer  /></div>
+              <div className="row"><Link to="/results1"><Button label={this.state.results1Btn}/></Link></div>
+          </div>
         </div>
       )
     }

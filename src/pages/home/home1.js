@@ -10,19 +10,20 @@ class Home1 extends Component {
 
   render() {
     return (
+      <div className="container">
+        <div className="row">
+        <div className="logo-img center-align">
+          <img alt="logo placeholder" src="./assets/images/REALUPLOGO1-1.png" />
+          </div>
+          <SetInterval />
+          <div className="center-align"><RandQuote /></div>
       
-      <div className="row">
-       <div className="logo-img center-align">
-        <img alt="logo placeholder" src="./assets/images/REALUPLOGO1-1.png" />
+        <div className="col s6 center-align">
+          <Link to="/home2">
+                      <Button label="Let's Get Started"/>
+          </Link>	
         </div>
-        <SetInterval />
-        <div className="center-align"><RandQuote /></div>
-    
-       <div className="col s6 center-align">
-        <Link to="/home2">
-                    <Button label="Let's Get Started"/>
-        </Link>	
-      </div>
+        </div>
       </div>
        
     )

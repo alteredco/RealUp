@@ -17,23 +17,25 @@ class Results1 extends Component {
 
   render() {
     return (
-      <div className="row center-align">
-        <div className="row">
-          <TextLines text={this.state.results1Txt} />
-        </div>
+      <div className="container">
+        <div className="row center-align">
+          <div className="row">
+            <TextLines text={this.state.results1Txt} />
+          </div>
+          
+          <div className="row">  
+            <Link to="/results3">
+                <Button label={this.state.results2Btn}/>
+            </Link>	
+          </div>
         
-       <div className="row">  
-          <Link to="/results3">
-              <Button label={this.state.results2Btn}/>
-          </Link>	
+          <div>  
+            <Link to="/results2">
+                <Button label={this.state.results3Btn}/>
+            </Link>	
+          </div>
+      
         </div>
-       
-        <div>  
-          <Link to="/results2">
-              <Button label={this.state.results3Btn}/>
-          </Link>	
-        </div>
-    
        </div>
   
 

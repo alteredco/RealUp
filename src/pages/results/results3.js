@@ -13,8 +13,10 @@ class Results3 extends Component {
 
   render() {
     return (
-      <div className="row center-align">
-        <RandQuote />
+      <div className="container">
+        <div className="row center-align">
+          <RandQuote />
+        </div>
       </div>
 
     )
