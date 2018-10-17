@@ -21,9 +21,9 @@ class Feelings2 extends Component {
       }
     render() {
       return (
-        <div>
+        <div className="container">
           <div className="row center-align">
-            <form class="col s8">
+            <form >
               <InputListItem
                   label={this.state.feelings2Quest1} 
                   placeholder={this.state.feelings2Placeholder1} />
