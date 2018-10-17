@@ -27,7 +27,7 @@ class Thoughts3 extends Component {
       return (
         <div className="container">
           <div className="row center-align">
-              <div className="row"><TextLines text={this.state.thoughts3Title} /></div>
+             <TextLines text={this.state.thoughts3Title} />
               <ul>
                   <li>{this.state.thoughts3Txt1}</li>
                   <li>{this.state.thoughts3Txt2}</li>
@@ -38,8 +38,8 @@ class Thoughts3 extends Component {
                   <li>{this.state.thoughts3Txt7}</li>
                   <li>{this.state.thoughts3Txt8} </li>
               </ul>
-              <div className="row"><TextLines  text={this.state.thoughts3Instr} /></div>
-              <div ><Timer  /></div>
+              <TextLines  text={this.state.thoughts3Instr} />
+              <div className="row"><Timer  /></div>
               <div className="row"><Link to="/results1"><Button label={this.state.results1Btn}/></Link></div>
           </div>
         </div>
