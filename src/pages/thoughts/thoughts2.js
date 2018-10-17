@@ -21,7 +21,7 @@ class Thoughts2 extends Component {
     render() {
       return (
         <div>
-          <div className="row center-align">
+          <div class="row center-align">
             <form class="col s8">
               <InputListItem
                   label={this.state.thoughts2Quest1} 
@@ -42,7 +42,7 @@ class Thoughts2 extends Component {
               </form>
           </div> 
 
-          <div className="row center-align">
+          <div class="row center-align">
               <Link to="/thoughts3"><Button label={this.state.thoughts3Btn}/></Link>
           </div>  
         </div>  
