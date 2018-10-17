@@ -17,22 +17,24 @@ class Home3 extends Component {
 
   render() {
     return (
-      <div className="row center-align">
-        <div className="row">
-          <TextLines text={this.state.home3Txt} />
-        </div>
-       <div>
-       <div className="row">  
-          <Link to="/thoughts1">
-              <Button label={this.state.thoughts1Btn}/>
-          </Link>	
-        </div>
-       
-        <div>  
-          <Link to="/feelings1">
-              <Button label={this.state.feelings1Btn}/>
-          </Link>	
-        </div>
+      <div className="container">
+        <div className="row center-align">
+          <div className="row">
+            <TextLines text={this.state.home3Txt} />
+          </div>
+        <div>
+        <div className="row">  
+            <Link to="/thoughts1">
+                <Button label={this.state.thoughts1Btn}/>
+            </Link>	
+          </div>
+        
+          <div>  
+            <Link to="/feelings1">
+                <Button label={this.state.feelings1Btn}/>
+            </Link>	
+          </div>
+          </div>
         </div>
        </div>
   

@@ -25,21 +25,23 @@ class Thoughts3 extends Component {
     }
     render() {
       return (
-        <div className="row center-align">
-            <div className="row"><TextLines text={this.state.thoughts3Title} /></div>
-            <ul>
-                <li>{this.state.thoughts3Txt1}</li>
-                <li>{this.state.thoughts3Txt2}</li>
-                <li>{this.state.thoughts3Txt3}</li>
-                <li>{this.state.thoughts3Txt4}</li>
-                <li>{this.state.thoughts3Txt5}</li>
-                <li>{this.state.thoughts3Txt6} </li>
-                <li>{this.state.thoughts3Txt7}</li>
-                <li>{this.state.thoughts3Txt8} </li>
-            </ul>
-            <div className="row"><TextLines  text={this.state.thoughts3Instr} /></div>
-            <div ><Timer  /></div>
-            <div className="row"><Link to="/results1"><Button label={this.state.results1Btn}/></Link></div>
+        <div className="container">
+          <div className="row center-align">
+              <div className="row"><TextLines text={this.state.thoughts3Title} /></div>
+              <ul>
+                  <li>{this.state.thoughts3Txt1}</li>
+                  <li>{this.state.thoughts3Txt2}</li>
+                  <li>{this.state.thoughts3Txt3}</li>
+                  <li>{this.state.thoughts3Txt4}</li>
+                  <li>{this.state.thoughts3Txt5}</li>
+                  <li>{this.state.thoughts3Txt6} </li>
+                  <li>{this.state.thoughts3Txt7}</li>
+                  <li>{this.state.thoughts3Txt8} </li>
+              </ul>
+              <div className="row"><TextLines  text={this.state.thoughts3Instr} /></div>
+              <div ><Timer  /></div>
+              <div className="row"><Link to="/results1"><Button label={this.state.results1Btn}/></Link></div>
+          </div>
         </div>
       )
     }
