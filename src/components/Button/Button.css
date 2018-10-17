@@ -1,5 +1,5 @@
 .btn-float {
-    background: #292727;
+    background: black;
     text-decoration: none;
     color: white !important;;
     display: inline-block;
@@ -9,14 +9,17 @@
     width: 200px;
     font-family: avenir;
 }
-/*#backbutton {
-  background: ;
-  text-decoration: none;
-  color: white;
-  display: inline-block;
-  font-size: 15px;
-  margin: none;
-  padding: 10px 10px 9px 10px;
-  width: 125px;
+
+
+#backbutton {
+  margin-top: 1em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  border-top: 1em solid transparent;
+  border-right: 2em solid #555;
+  border-bottom: 1em solid transparent;
+  border-left: 0;
+  background: transparent;
   font-family: avenir;
-}*/
+}
