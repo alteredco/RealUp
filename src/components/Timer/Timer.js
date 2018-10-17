@@ -40,12 +40,12 @@ class Timer extends Component {
       this.secondsRemaining--
   }
   componentWillUnmount(){
-    clearInterval(this.intervalId);
+    clearInterval(this.intervalHandle);
   }
   
   render() {
     return(
-      <div>
+      <div className="container">
       <button className="btn-floating btn-large green" onClick={this.startTimer}>START</button>
       <div className="row"><h2>{this.state.minutes}:{this.state.seconds}</h2></div>
       </div>
