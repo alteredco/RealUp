@@ -11,6 +11,8 @@
 
 # cordova
 /www
+/platforms
+
 
 # misc
 .DS_Store
