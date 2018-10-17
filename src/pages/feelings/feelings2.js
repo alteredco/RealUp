@@ -3,6 +3,7 @@ import InputListItem from '../../components/InputListItem/InputListItem';
 import Button from '../../components/Button/Button';
 import TextLines from '../../components/TextLines/TextLines';
 import {Link } from 'react-router-dom';
+import './feelings.css';
 
 class Feelings2 extends Component {
     constructor(props) {
