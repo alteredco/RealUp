@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BackButton from "../BackButton";
 import "./nav.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -9,6 +11,7 @@ class Nav extends React.Component {
     constructor(props){
         super(props);
         this.goBack=this.goBack.bind(this);
+        this.icon= {faArrowLeft};
         this.backBtnText="Back";
         this.id="backbutton";
     }
