@@ -1,14 +1,22 @@
-describe('RealUp Test App', function(){
+describe('RealUp Test App: Feelings2', function(){
     it('Test cypress Works!', function(){
-        expect(true).to.equal(true)
+    expect(true).to.equal(true)
     })
-    it('Visits RealUp Home Page', function(){
-        cy.visit('/feelings2')
+    it('Visits Feelings Page 2', function(){
+    cy.visit('/feelings2')
     })
-    it("Clicks The Let's Get Stated button", function(){
-        cy.visit('/')
-        cy.contains("LET'S GET STARTED").click();
+    it("Clicks The Next button", function(){
+    cy.visit('/feelings2')
+    cy.contains("Next").click();
     })
-})
+    it("Clicks The Back button", function(){
+    cy.visit('/feelings2')
+    cy.get('#backbutton').click()
+    })
+    })
+    
+
+
+
 
 
