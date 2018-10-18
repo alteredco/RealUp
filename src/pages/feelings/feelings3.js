@@ -12,7 +12,7 @@ class Feelings3 extends Component {
         feelings3Title: "Visualization Exercise",
         feelings3Txt1: "Imagine feeling incredibly proud of yourself",
         feelings3Txt2: "Imagine feeling incredibly happy about something",
-        feelings3Instr: "When you're ready, start the 2 minute timer and hold those feelings inside.",
+        feelings3Instr: "When you're ready, start the 2 minute timer and hold those feelings inside",
         startBtn: "Start",
         results1Btn: "Next",        
       }
