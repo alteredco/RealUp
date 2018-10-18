@@ -1,4 +1,4 @@
-describe('RealUp Test App', function(){
+describe('RealUp Test App: Home', function(){
     it('Test cypress Works!', function(){
         expect(true).to.equal(true)
     })
