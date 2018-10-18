@@ -7,7 +7,7 @@ class Feelings1 extends Component {
     constructor(props) {
       super(props)
       this.state = {
-          feelings1Txt: "Imposter Syndrome can cause feelings of anxiety, fear, depression.",
+          feelings1Txt: "Impostor Syndrome can cause feelings of anxiety, fear, and depression.",
           feelings2Txt: "Real Up is here to help you manage through this physiological response.",
           feelings1Btn: "I'm Ready",  
 
