@@ -29,7 +29,7 @@ class Nav extends React.Component {
             <BackButton label={this.backBtnText} onClick={this.goBack} id={this.id}/>
         </div> 
         <div className="col">
-		<Link to="/">
+		<Link to="/home2">
             <img class="logo" height="auto" width="300px" alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" />
         </Link>
         </div>	

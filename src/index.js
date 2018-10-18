@@ -37,7 +37,7 @@ ReactDOM.render(
        <Route path="/thoughts1" component={Thoughts1} />
        <Route path="/home3" component={Home3} />
        <Route path="/home2" component={Home2} />
-       <Route exact path="/" component={Home1} />        
+       <Route exact path="/" component={Home2} />        
       </Switch>
     </div> 
   </BrowserRouter>,
