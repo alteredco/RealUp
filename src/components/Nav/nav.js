@@ -23,7 +23,7 @@ class Nav extends React.Component {
     render(){
         return(
     <div className="container">
-        <div className="center-align"> 
+        <div className="row col s12 m8 l8 offset-m2 offset-l2"> 
             <BackButton label={this.backBtnText} onClick={this.goBack} id={this.id}/>
 		<Link to="/">
             <img height="auto" width="300px" alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" />
