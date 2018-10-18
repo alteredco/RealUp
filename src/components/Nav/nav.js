@@ -22,12 +22,13 @@ class Nav extends React.Component {
     
     render(){
         return(
+
     <div className="container">
-        <div className="row col s12 m8 l8 offset-m2 offset-l2">
+        <div className="row col s12 m12 l12 offset-m2 offset-l2">
         <div>
             <BackButton label={this.backBtnText} onClick={this.goBack} id={this.id}/>
         </div> 
-        <div className="col s12 m8 l8 offset-m1 offset-12">
+        <div className="col s12 m12 l12 offset-m1 offset-12">
 		<Link to="/">
             <img class="logo" height="auto" width="300px" alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" />
         </Link>

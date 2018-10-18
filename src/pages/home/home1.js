@@ -14,7 +14,7 @@ class Home1 extends Component {
           </div>
       </div>
       <div className="row">
-        <div className="col s12 m12 l8 center-align">
+        <div className="col s12 m12 l12 center-align">
           <Link to="/home2">
                       <Button label="Let's Get Started"/>
           </Link>	

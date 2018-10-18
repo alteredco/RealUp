@@ -1,12 +1,10 @@
 #backbutton {
-    float: left;
-    background-color: #292828;
+    float: left;  
 }
 .nav-center {
     display: inline;
     float: none;
 }
-
 .logo {
     display: block;
     margin-left: auto;
