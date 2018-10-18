@@ -19,7 +19,7 @@ class Home3 extends Component {
     return (
       <div className="container">
         <div className="row center-align">
-          <div className="row">
+          <div>
             <TextLines text={this.state.home3Txt} />
           </div>
         <div>

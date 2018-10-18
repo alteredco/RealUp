@@ -8,7 +8,7 @@ class Home1 extends Component {
   render() {
     return (
       <div className="container">
-        <div className="row">
+        <div className="row valign-wrapper">
           <div className="logo-img center-align">
             <img alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" className="col s12 m12 l8"/>
           </div>
