@@ -2,3 +2,9 @@
     background-image: url("./assets/images/FEELINGS.jpg");
     background-size: cover;
  } */
+ .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
