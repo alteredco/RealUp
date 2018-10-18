@@ -1,5 +1,6 @@
 .btn {
   background-color: #292828;
+  margin-top: 1em;
 }
 .btn-float {
     background: black;
@@ -12,5 +13,6 @@
     width: 200px;
     font-family: avenir;
 }
+
 
 
