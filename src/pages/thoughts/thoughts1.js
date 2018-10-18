@@ -14,11 +14,13 @@ class Thoughts1 extends Component {
       }
     render() {
       return (
-        <div className="row center-align">
-            <div className="row"><TextLines text={this.state.thoughts1Txt} /></div>
-            <div className="row"><TextLines text={this.state.question1Txt}/></div>
-            <div className="row"><Link to="/thoughts2"><Button label={this.state.thoughts2Btn}/></Link></div>
-        </div>      
+        <div className="container">
+          <div className="row center-align">
+              <div className="row"><TextLines text={this.state.thoughts1Txt} /></div>
+              <div className="row"><TextLines text={this.state.question1Txt}/></div>
+              <div className="row"><Link to="/thoughts2"><Button label={this.state.thoughts2Btn}/></Link></div>
+          </div>    
+        </div>   
       )
     }
   }

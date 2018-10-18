@@ -1,15 +1,16 @@
+.btn {
+  background-color: #292828;
+}
 .btn-float {
-    background-image: -webkit-linear-gradient(top, #E5E7E9, white);
-    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, .3), inset 0px 2px 1px 2px white, inset 0px -2px 1px 1px rgba(204,198,197,.5);
-    border: none;
-    color: #5F6A6A;
-    padding: 10px;
-    text-align: center;
+    background: black;
     text-decoration: none;
-    color: #bb8182;
+    color: white;
     display: inline-block;
     font-size: 15px;
-    margin: 4px 20px;
-    border-radius: 10%;  
-    padding: 10px 10px 9px 10px ;
+    margin: none;
+    padding: 10px 10px 9px 10px;
+    width: 200px;
+    font-family: avenir;
 }
+
+

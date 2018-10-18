@@ -9,6 +9,11 @@
 # production
 /build
 
+# cordova
+/www
+/platforms
+
+
 # misc
 .DS_Store
 .env.local

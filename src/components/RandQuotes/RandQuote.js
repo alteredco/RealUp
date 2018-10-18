@@ -10,7 +10,7 @@ const data = ["You are allowed to be both a masterpiece and a work in progress s
 
     render() {
           return (
-            <div>
+            <div className="col s12 m12 l8 flow-text">
               { this.randomiseQuotes(data) }
             </div>
       )

@@ -1,0 +1,18 @@
+.btn {
+  background-color: #292828;
+  margin-top: 1em;
+}
+.btn-float {
+    background: black;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    margin: none;
+    padding: 10px 10px 9px 10px;
+    width: 200px;
+    font-family: avenir;
+}
+
+
+
