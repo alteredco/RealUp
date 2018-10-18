@@ -16,8 +16,8 @@ class Feelings1 extends Component {
     render() {
       return (
         <div className="row center-align">
-            <div className="row"><TextLines text={this.state.feelings1Txt} /></div>
-            <div className="row"><TextLines text={this.state.feelings2Txt}/></div>
+            <div ><TextLines text={this.state.feelings1Txt} /></div>
+            <div><TextLines text={this.state.feelings2Txt}/></div>
             <div className="row"><Link to="/feelings2"><Button label={this.state.feelings1Btn}/></Link></div>
         </div>      
       )
