@@ -1,8 +1,11 @@
 #backbutton {
     float: left;  
 }
+.nav-center {
+    display: inline;
+    float: none;
+}
 .logo {
-    text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
