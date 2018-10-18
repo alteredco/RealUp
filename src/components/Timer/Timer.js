@@ -45,9 +45,17 @@ class Timer extends Component {
   
   render() {
     return(
-      <div className="container">
-      <button className="btn-floating btn-large green" onClick={this.startTimer}>START</button>
-      <div className="row"><h2>{this.state.minutes}:{this.state.seconds}</h2></div>
+      <div>
+        <div className="row">
+          <div className="col s12 m8 l8 offset-m2 offset-l2">
+            <button className="btn-floating btn-large green" onClick={this.startTimer}>START</button>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col s12 m8 l8 offset-m2 offset-l2">
+            <h2>{this.state.minutes}:{this.state.seconds}</h2>
+          </div>
+        </div>
       </div>
     );
   }
