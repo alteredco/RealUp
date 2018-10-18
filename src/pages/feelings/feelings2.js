@@ -14,7 +14,7 @@ class Feelings2 extends Component {
           feelings2Quest3: "How would you help a friend feeling this way",
           feelings2Placeholder1: "I'm feeling stressed, anxious, nervous",
           feelings2Placeholder2: "My neck, my back",
-          feelings2Placeholder3: "",
+          feelings2Placeholder3: "I would let them know they are wonderfu!",
           feelings2Txt: "Focus on the feeling with kindness and curiosity and then let it go.",
           feelings3Btn: "Next",        
         }
