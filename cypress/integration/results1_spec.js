@@ -9,9 +9,19 @@ describe('RealUp Test App: Results1', function(){
         cy.visit('/results1')
         cy.contains("Yes").click()
     })
+    it("The Yes button leads to results3", function(){
+        cy.visit('/results1')
+        cy.contains("Yes").click()
+        cy.url().should('eq', 'http://localhost:3000/results3')
+    })
     it("Clicks The Not Really button", function(){
         cy.visit('/results1')
         cy.contains("Not Really").click()
+    })
+    it("The Not Really button leads to results2", function(){
+        cy.visit('/results1')
+        cy.contains("Not Really").click()
+        cy.url().should('eq', 'http://localhost:3000/results2')
     })
     it("Clicks The Back button", function(){
         cy.visit('/results1')

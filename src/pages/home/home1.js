@@ -10,7 +10,9 @@ class Home1 extends Component {
       <div className="container">
         <div className="row valign-wrapper">
           <div className="logo-img center-align">
+          <div className="col s12 m12 l12 center-align">
             <img class="logo" alt="logo placeholder" src="../assets/images/RealUpLogo.10.16.png" className="col s12 m12 l8"/>
+          </div>
           </div>
       </div>
       <div className="row">

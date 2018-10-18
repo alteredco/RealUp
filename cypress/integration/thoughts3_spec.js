@@ -13,6 +13,11 @@ describe('RealUp Test App: Thoughts3', function(){
         cy.visit('/thoughts3')
         cy.contains("Next").click();
     })
+    it("The Next button leads to results1", function(){
+        cy.visit('/thoughts3')
+        cy.contains("Next").click()
+        cy.url().should('eq', 'http://localhost:3000/results1')
+    })
     it("Clicks The Back button", function(){
         cy.visit('/thoughts3')
         cy.get('#backbutton').click()

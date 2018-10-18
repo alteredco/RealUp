@@ -8,7 +8,17 @@ describe('RealUp Test App: Home', function(){
     it("Clicks The Let's Get Stated button", function(){
         cy.visit('/')
         cy.contains("Let's Get Started").click()
+
     })
+    it("The Let's Get Stated button leads to home2", function(){
+        cy.visit('/')
+        cy.contains("Let's Get Started").click()
+        cy.url().should('eq', 'http://localhost:3000/home2')
+        
+    })
+
+    
+    
 })
 
 
