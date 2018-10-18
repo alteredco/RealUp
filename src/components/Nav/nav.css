@@ -2,3 +2,8 @@
     float: left;
     background-color: #292828;
 }
+.nav-center {
+    display: inline;
+    float: none;
+}
+
