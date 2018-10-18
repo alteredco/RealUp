@@ -43,5 +43,8 @@
       "android",
       "browser"
     ]
+  },
+  "devDependencies": {
+    "cypress": "^3.1.0"
   }
 }
