@@ -9,9 +9,12 @@ library.add(faArrowLeft)
 // The ...props means, spread all of the passed props onto this element
 // That way we don't have to define them all individually
 const Button = props => (
-<button className="btn" onClick={props.onClick} id={props.id}>
+    <div className="col s12 m8 l8 offset-m2 offset-l2">
+        <button className="btn" onClick={props.onClick} id={props.id}>
             {props.label}
-</button> 
+        </button> 
+    </div>
+
 );
 
 export default Button;

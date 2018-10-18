@@ -13,6 +13,12 @@ describe('RealUp Test App:Home2', function(){
         cy.visit('/home2')
         cy.get('#backbutton').click()
     })
+    it("The Let's Get Started button leads to home3", function(){
+        cy.visit('/home2')
+        cy.contains("Let's Get Started").click()
+        cy.url().should('eq', 'http://localhost:3000/home3')
+        
+    })
 })
 
 
