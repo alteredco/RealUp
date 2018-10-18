@@ -18,6 +18,18 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <platform name="android">
+    <!-- you can use any density that exists in the Android project -->
+    <splash src="res/screen/android/AndroidRealUpLogo.hdpi.png" density="land-hdpi"/>
+    <splash src="res/screen/android/AndroidRealUpLogo.hdpi.png" density="land-ldpi"/>
+    <splash src="res/screen/android/AndroidRealUpLogo.mdpi.png" density="land-mdpi"/>
+    <splash src="res/screen/android/AndroidRealUpLogo.xhdpi.png" density="land-xhdpi"/>
+
+    <splash src="res/screen/android/AndroidRealUpLogo.hdpi.png" density="port-hdpi"/>
+    <splash src="res/screen/android/AndroidRealUpLogo.hdpi.png" density="port-ldpi"/>
+    <splash src="res/screen/android/AndroidRealUpLogo.mdpi.png" density="port-mdpi"/>
+    <splash src="res/screen/android/AndroidRealUpLogo.xhdpi.png" density="port-xhdpi"/>
+</platform>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
