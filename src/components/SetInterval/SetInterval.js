@@ -17,7 +17,7 @@ class SetInterval extends Component {
   render() {
     return this.state.redirect
       ? <Redirect to="/home2" />
-      : <div>Content</div>
+      : <div></div>
   }
 }
 
