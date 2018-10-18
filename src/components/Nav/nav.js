@@ -22,19 +22,20 @@ class Nav extends React.Component {
     
     render(){
         return(
-            <div className="container">
-            <div className="row">
-                <div className="col s1 m3 l4">
-                    <BackButton label={this.backBtnText} onClick={this.goBack} id={this.id}/>
-                </div> 
-                <div className="col s11 m9 l8 offset-m1">
-                <Link to="/">
-                    <img height="auto" width="300px" alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" />
-                </Link>
-                </div>	
-            
-            </div>
-            </div>
+
+    <div className="container">
+        <div className="row col s12 m12 l12 offset-m2 offset-l2">
+        <div>
+            <BackButton label={this.backBtnText} onClick={this.goBack} id={this.id}/>
+        </div> 
+        <div className="col s12 m12 l12 offset-m1 offset-12">
+		<Link to="/">
+            <img class="logo" height="auto" width="300px" alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" />
+        </Link>
+        </div>	
+    
+        </div>
+        </div>
     )}
     
 }
