@@ -33,7 +33,7 @@ npm install --save react-router
 ```
 this --save, saves the dependcies of react-router (or the package of your choice) to package.json (and so does not break the app after you push to your-branch, merge to master and re-pull latest master with git pull origin master).
 
-###File System Overview
+### File System Overview
 
 components folder (for our app componenets for example as ):
 
@@ -151,7 +151,179 @@ When you checkout master, you also have to pull (also a pull is same as a git Fe
 
 This sounds complicated but believe me this works!! There are many more commands we may beed to use, but this is the every day, team coding startegy!
 
-Installing Materialize:
-https://materializecss.com/getting-started.html
+## Installing Materialize:
+Directions: https://materializecss.com/getting-started.html
+Add the CDN css and js files to Index.html.
 
-### Directory structure
+## Android Cordova Build with create react app structure
+
+npm install -g cordova
+
+Change the scripts in package.json
+
+Assumption:
+
+Regular build will be for react app.
+Cordova build will be for cordova app.
+There wont be 2 builds at same time.
+
+### For Windows
+```
++ "start": "npm run remove:www && react-scripts start",
+- "start": "react-scripts start"
++ "build": "npm run remove:www && react-scripts build",
+- "build": "react-scripts build"
++ "build:cordova": "npm run remove:www && react-scripts build && node __script.js && move build www",
+"test": "react-scripts test --env=jsdom",
++ "eject": "npm run remove:www && react-scripts eject",
+- "eject": "react-scripts eject"
++ "remove:www": "if exist www rd /s /q www"
+```
+
+### For Mac
+```
++ "start": "npm run remove:www && react-scripts start",
+- "start": "react-scripts start"
++ "build": "npm run remove:www && react-scripts build",
+- "build": "react-scripts build"
++ "build:cordova": "npm run remove:www && react-scripts build && node __script.js && mv build www",
+"test": "react-scripts test --env=jsdom",
++ "eject": "npm run remove:www && react-scripts eject",
+- "eject": "react-scripts eject"
++ "remove:www": "rm -rf www"
+
+```
+
+
+ Package.json final version MAC looks like:
+ 
+```
+
+"start": "npm run remove:www && react-scripts start",
+"build": "npm run remove:www && react-scripts build",
+"build:cordova": "npm run remove:www && react-scripts build && node __script.js && mv build www",
+"test": "react-scripts test --env=jsdom",
+"eject": "npm run remove:www && react-scripts eject",
+"remove:www": "rm -rf www"
+```
+Package.json final version WINDOWS looks like:
+Nitu to add code here....
+
+
+
+create-react-app builds into build folder. But cordova needs application content to be in www folder. So above build:cordova will move the build folder to www.
+
+www is cordova build folder thats needs to built for cordova app only. so this folder should be removed when building for react app. so remove:www validation is added to the scripts.
+
+### add __script.js file in the root directory and copy the below code into the file.
+```
+let FS= require('fs');
+
+// read the index.html from build folder
+let data = FS.readFileSync('./build/index.html', 'utf8');
+
+function insertContent(fullContent, beforeWhat, newContent) {
+    // get the position before which newContent has to be added
+    const position = fullContent.indexOf(beforeWhat);
+
+    // since splice can be used on arrays only
+    let fullContentCopy = fullContent.split('');
+    fullContentCopy.splice(position, 0, newContent);
+
+    return fullContentCopy.join('');
+}
+
+```
+
+ will add the <meta> tags needed for cordova app
+ ```
+const afterAddingMeta = insertContent(data, "<link", 
+`<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">`+
+`<meta name="format-detection" content="telephone=no">`+
+`<meta name="msapplication-tap-highlight" content="no">`);
+
+will add <script> pointing to cordova.js
+const afterAddingScript = insertContent(afterAddingMeta, "<script", `<script type="text/javascript" src="cordova.js"></script>`);
+
+updates the index.html file
+
+FS.writeFile('./build/index.html', afterAddingScript, 'utf8', (err)=> {
+    if(err) {
+        throw err
+    };
+})
+```
+
+This script will add the necessary tags to index.html for cordova build.
+
+cd out of create react app folder
+cordova create <alternateAppName>
+(Use different name to your react app name)
+-->Creating a new cordova project.
+
+copy the config.xml from cordova project to react-with-cordova project.
+Note: May need to copy other folders based on the project requirements. For this project I dont need rest.
+
+Note: May need to change id value in <widget id="com.example.sample"> of config.xml based on project name.
+```
+cd <appfolder>
+```
+## React App
+### Start React app
+
+```
+npm start
+```
+
+Starts the regular create-react-app on localhost:3000/
+
+### Build for React app
+```
+npm run build
+```
+
+Builds production build for react app. Also creates the build folder in your app.
+
+## Cordova App
+### Build for Cordova app
+npm run build:cordova
+
+builds the app by appending tags to index.html which will be needed for cordova builds
+
+cordova platform add android
+
+cordova build android 
+--->BUILD SUCCESSFUL in 29s
+46 actionable tasks: 46 executed
+Built the following apk(s):
+        /Users/louise/momscancode/realup/platforms/android/app/build/outputs/apk/debug/app-debug.apk
+Email this to android phone user to test
+
+
+Or connect android phone to your PC and enter
+ cordova run android
+
+## Option Browser Platform
+### Add Browser platform
+ cordova platform add browser
+
+### Browser Build
+cordova build browser
+
+Note: This build needs www directory which is created from npm run build:cordova
+### Run in Browser
+cordova run browser
+
+Runs the browser build in browser at localhost:8000 so you can debug
+
+Debug:
+After each issue:
+```
+npm run build:cordova
+cordova run android
+```
+
+To Debug:https://geeklearning.io/apache-cordova-and-remote-debugging-on-android/
+Enable debug on device, hook it up to your machine, 
+then when you run the android app you can go to  chrome://inspect/#devices and inspect the console!
+
