@@ -29,8 +29,8 @@ class Thoughts3 extends Component {
           <div className="row center-align">
             <div><TextLines text={this.state.thoughts3Title} /></div>
             <div>  
-              <div className="col s12 m12 l12 offset-m2 offset-l2">
-                  <ul>
+              <div className="col s12 m12 l12">
+                  <ul class="thoughts3">
                       <li>{this.state.thoughts3Txt1}</li>
                       <li>{this.state.thoughts3Txt2}</li>
                       <li>{this.state.thoughts3Txt3}</li>
