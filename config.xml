@@ -20,6 +20,7 @@
         <allow-intent href="market:*" />
         <platform name="android">
     <!-- you can use any density that exists in the Android project -->
+     <icon src="res/android/android_ic_launcher.hdpi.png" />
     <splash src="res/screen/android/AndroidRealUpLogo.hdpi.png" density="land-hdpi"/>
     <splash src="res/screen/android/AndroidRealUpLogo.hdpi.png" density="land-ldpi"/>
     <splash src="res/screen/android/AndroidRealUpLogo.mdpi.png" density="land-mdpi"/>
