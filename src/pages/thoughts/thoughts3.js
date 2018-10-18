@@ -18,7 +18,7 @@ class Thoughts3 extends Component {
         thoughts3Txt6: "I have the power to change my story",
         thoughts3Txt7: "Challenges are opportunities",
         thoughts3Txt8: "I choose what I become",
-        thoughts3Instr: "REPEAT THESE FOR 2 MINUTES",
+        thoughts3Instr: "Repeat these affirmations 2 minutes",
         startBtn: "Start",
         results1Btn: "Next",        
       }

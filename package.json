@@ -2,17 +2,15 @@
   "name": "realup",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.6",
     "@fortawesome/free-solid-svg-icons": "^5.4.1",
     "@fortawesome/react-fontawesome": "^0.1.3",
-    "font-awesome": "^4.7.0",
     "cordova-android": "^7.1.1",
     "cordova-browser": "^5.0.4",
+    "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-whitelist": "^1.3.3",
-    "i": "^0.3.6",
-    "npm": "^6.4.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-router-dom": "^4.3.1",
@@ -37,14 +35,12 @@
   ],
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-splashscreen": {}
     },
     "platforms": [
       "android",
       "browser"
     ]
-  },
-  "devDependencies": {
-    "cypress": "^3.1.0"
   }
 }

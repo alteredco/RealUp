@@ -8,7 +8,7 @@ class Results1 extends Component {
     super(props)
     this.state = {
       results1Txt: "Do You Feel Better?",
-      results2Btn: "Yes!",
+      results2Btn: "Yes",
       results3Btn: "Not Really"       
     }
   }

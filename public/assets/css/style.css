@@ -1,3 +1,7 @@
 .Home1 {
     background: grey;
 }
+body {
+    background-image: url("../images/FEELINGS.jpg");
+    background-size: cover;
+ }
