@@ -1,3 +1,9 @@
 #backbutton {
     float: left;
+    background: transparent;
+    color: black;
+    width: 0px;
+    height:0px;
+    padding: none;
+    border: none; 
 }

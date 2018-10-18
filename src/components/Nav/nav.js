@@ -5,7 +5,6 @@ import "./nav.css";
 
 
 
-
 class Nav extends React.Component {
     constructor(props){
         super(props);
@@ -21,11 +20,10 @@ class Nav extends React.Component {
     render(){
         return(
     <div className="container">
-
         <div className="center-align"> 
             <Button label={this.backBtnText} onClick={this.goBack} id={this.id}/>
 		<Link to="/">
-            <img height="200px" width="200px" alt="logo placeholder" src="./assets/images/REALUPLOGO1-1.png" />
+            <img height="300px" width="300px" alt="logo placeholder" src="./assets/images/REALUPLOGO1-1.png" />
         </Link>	
     
         </div>
