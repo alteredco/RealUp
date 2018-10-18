@@ -22,6 +22,7 @@ class Nav extends React.Component {
     
     render(){
         return(
+
     <div className="container">
         <div className="row col s12 m12 l12 offset-m2 offset-l2">
         <div>
