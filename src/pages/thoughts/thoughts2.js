@@ -7,7 +7,7 @@ class Thoughts2 extends Component {
     constructor(props) {
       super(props)
       this.state = {
-          thoughts2Quest1: "I started to thinking about this when",
+          thoughts2Quest1: "I started thinking this way when",
           thoughts2Quest2: "What are my thoughts",
           thoughts2Quest3: "What supports this",
           thoughts2Quest4: "What does not support it",
