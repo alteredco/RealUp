@@ -12,6 +12,8 @@ import Thoughts3 from './pages/thoughts/thoughts3';
 import Results1 from './pages/results/results1.js';
 import Results2 from './pages/results/results2.js';
 import Results3 from './pages/results/results3.js';
+import Feelings1 from './pages/feelings/feelings1.js';
+
 import Feelings2 from './pages/feelings/feelings2';
 import Feelings3 from './pages/feelings/feelings3';
 
@@ -24,6 +26,7 @@ ReactDOM.render(
       <Nav></Nav>
       <Switch>
        {/*  /* IMPORTANT! add any other routes ABOVE the home1 Route !*/ }
+       <Route path="/feelings1" component={Feelings1} />
        <Route path="/results3" component={Results3} />
        <Route path="/results2" component={Results2} />
        <Route path="/results1" component={Results1} />
