@@ -18,8 +18,15 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <icon src="public/assets/images/android/android_ic_launcher.hdpi.png" />
-        <splash src="public/assets/images/screen/android/AndroidRealUpLogo.hdpi.png" />
+        <icon src="public/assets/images/android/android_ic_launcher.hdpi.png" density="hdpi" />
+        <icon src="public/assets/images/android/android_ic_launcher.mdpi.png" density="mdpi"/>
+        <icon src="public/assets/images/android/android_ic_launcher.xdpi.png" density="xdpi"/>
+        <icon src="public/assets/images/android/android_ic_launcher.xxhdpi.png" density="xxhdpi"/>
+        <icon src="public/assets/images/android/android_ic_launcher.xxxhdpi.png" density="xxxhdpi"/>
+        <splash src="public/assets/images/screen/android/AndroidRealUpLogo.hdpi.png" density="land-hdpi"/>
+        <splash src="public/assets/images/screen/android/AndroidRealUpLogo.mdpi.png" density="land-mdpi"/>
+        <splash src="public/assets/images/screen/android/AndroidRealUpLogo.xdpi.png" density="land-xdpi"/>
+        <splash src="public/assets/images/screen/android/AndroidRealUpLogo.xxdpi.png" density="land-xxdpi"/>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
