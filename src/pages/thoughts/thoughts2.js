@@ -14,7 +14,7 @@ class Thoughts2 extends Component {
           thoughts2Placeholder1: "I was getting ready for work",
           thoughts2Placeholder2: "I'm not prepared, I shouldn't be given this role",
           thoughts2Placeholder3: "I've never done this before",
-          thoughts2Placeholder4: "",
+          thoughts2Placeholder4: "My expertise",
           thoughts3Btn: "Next",        
         }
       }
