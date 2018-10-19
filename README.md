@@ -249,7 +249,7 @@ Package.json final version WINDOWS looks like:
 "test": "react-scripts test --env=jsdom", 
 "eject": "npm run remove:www && react-scripts eject", 
 "remove:www": "if exist www rd /s /q www" 
-
+```
 
 
 
@@ -258,7 +258,7 @@ create-react-app builds into build folder. But cordova needs application content
 www is cordova build folder thats needs to built for cordova app only. so this folder should be removed when building for react app. so remove:www validation is added to the scripts.
 
 ### add __script.js file in the root directory and copy the below code into the file.
-```
+
 let FS= require('fs');
 
 // read the index.html from build folder
