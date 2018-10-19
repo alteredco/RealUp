@@ -242,7 +242,7 @@ There wont be 2 builds at same time.
 "remove:www": "rm -rf www"
 ```
 Package.json final version WINDOWS looks like:
-
+```
 "start": "npm run remove:www && react-scripts start", 
 "build": "npm run remove:www && react-scripts build", 
 "build:cordova": "npm run remove:www && react-scripts build && node __script.js && move build www", 
