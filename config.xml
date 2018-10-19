@@ -18,21 +18,14 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <icon density="hdpi" src="public/assets/images/android/ICONANDROID.png" />
-        <icon density="mdpi" src="public/assets/images/android/android_ic_launcher.mdpi.png" />
-        <icon density="xhdpi" src="public/assets/images/android/android_ic_launcher.xhdpi.png" />
-        <icon density="xxhdpi" src="public/assets/images/android/android_ic_launcher.xxhdpi.png" />
-        <icon density="xxxhdpi" src="public/assets/images/android/android_ic_launcher.xxxhdpi.png" />
+        <icon src="public/assets/images/android/ICONANDROID.png" />
         <splash density="land-hdpi" src="public/assets/images/screen/android/NEWSPLASHBACKGRND.png" />
-        <splash density="land-mdpi" src="public/assets/images/screen/android/AndroidRealUpLogo.mdpi.png" />
-        <splash density="land-xhdpi" src="public/assets/images/screen/android/AndroidRealUpLogo.xhdpi.png" />
-        <splash density="land-xxhdpi" src="public/assets/images/screen/android/AndroidRealUpLogo.xxhdpi.png" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
-    <engine name="android" spec="^7.1.1" />
     <engine name="browser" spec="^5.0.4" />
+    <engine name="android" spec="^7.1.1" />
 </widget>
