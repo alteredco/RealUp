@@ -1,14 +1,42 @@
 [
     {
+        "merged": "/Users/louise/momscancode/realup/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_icon.png.flat",
+        "source": "/Users/louise/momscancode/realup/platforms/android/app/src/main/res/mipmap-xxhdpi/icon.png"
+    },
+    {
+        "merged": "/Users/louise/momscancode/realup/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon.png.flat",
+        "source": "/Users/louise/momscancode/realup/platforms/android/app/src/main/res/mipmap-xxxhdpi/icon.png"
+    },
+    {
+        "merged": "/Users/louise/momscancode/realup/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_icon.png.flat",
+        "source": "/Users/louise/momscancode/realup/platforms/android/app/src/main/res/mipmap-xhdpi/icon.png"
+    },
+    {
+        "merged": "/Users/louise/momscancode/realup/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-hdpi_screen.png.flat",
+        "source": "/Users/louise/momscancode/realup/platforms/android/app/src/main/res/drawable-land-hdpi/screen.png"
+    },
+    {
         "merged": "/Users/louise/momscancode/realup/platforms/android/app/build/intermediates/res/merged/debug/xml_config.xml.flat",
         "source": "/Users/louise/momscancode/realup/platforms/android/app/src/main/res/xml/config.xml"
     },
     {
-        "merged": "/Users/louise/momscancode/realup/platforms/android/app/build/intermediates/res/merged/debug/drawable-mdpi_screen.png.flat",
-        "source": "/Users/louise/momscancode/realup/platforms/android/app/src/main/res/drawable-mdpi/screen.png"
+        "merged": "/Users/louise/momscancode/realup/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xhdpi_screen.png.flat",
+        "source": "/Users/louise/momscancode/realup/platforms/android/app/src/main/res/drawable-land-xhdpi/screen.png"
+    },
+    {
+        "merged": "/Users/louise/momscancode/realup/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-mdpi_screen.png.flat",
+        "source": "/Users/louise/momscancode/realup/platforms/android/app/src/main/res/drawable-land-mdpi/screen.png"
+    },
+    {
+        "merged": "/Users/louise/momscancode/realup/platforms/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon.png.flat",
+        "source": "/Users/louise/momscancode/realup/platforms/android/app/src/main/res/mipmap-hdpi/icon.png"
     },
     {
         "merged": "/Users/louise/momscancode/realup/platforms/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_icon.png.flat",
         "source": "/Users/louise/momscancode/realup/platforms/android/app/src/main/res/mipmap-mdpi/icon.png"
+    },
+    {
+        "merged": "/Users/louise/momscancode/realup/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xxhdpi_screen.png.flat",
+        "source": "/Users/louise/momscancode/realup/platforms/android/app/src/main/res/drawable-land-xxhdpi/screen.png"
     }
 ]
