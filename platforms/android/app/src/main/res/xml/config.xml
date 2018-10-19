@@ -29,7 +29,7 @@
     <icon density="xhdpi" src="public/assets/images/android/android_ic_launcher.xhdpi.png" />
     <icon density="xxhdpi" src="public/assets/images/android/android_ic_launcher.xxhdpi.png" />
     <icon density="xxxhdpi" src="public/assets/images/android/android_ic_launcher.xxxhdpi.png" />
-    <splash density="land-hdpi" src="public/assets/images/screen/android/AndroidRealUpLogo.hdpi.png" />
+    <splash density="land-hdpi" src="public/assets/images/screen/android/NEWSPLASHBACKGRND.png" />
     <splash density="land-mdpi" src="public/assets/images/screen/android/AndroidRealUpLogo.mdpi.png" />
     <splash density="land-xhdpi" src="public/assets/images/screen/android/AndroidRealUpLogo.xhdpi.png" />
     <splash density="land-xxhdpi" src="public/assets/images/screen/android/AndroidRealUpLogo.xxhdpi.png" />
