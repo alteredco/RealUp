@@ -15,7 +15,7 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="index.html" />
+    <content src="/index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -24,5 +24,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
+    <icon src="public/assets/images/android/android_ic_launcher.hdpi.png" />
+    <splash src="public/assets/images/screen/android/AndroidRealUpLogo.hdpi.png" />
     <preference name="loglevel" value="DEBUG" />
 </widget>

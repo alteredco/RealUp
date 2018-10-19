@@ -12,7 +12,7 @@ class Nav extends React.Component {
         super(props);
         this.goBack=this.goBack.bind(this);
         this.icon= {faArrowLeft};
-        this.backBtnText="Back";
+        this.backBtnText="";
         this.id="backbutton";
     }
 
