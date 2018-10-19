@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import BackButton from "../BackButton";
 import "./nav.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -37,7 +36,7 @@ class Nav extends React.Component {
 
          <div className="col">
 		<Link to="/home2">
-            <img class="logo" id="logo" height="auto" width="300px" alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" />
+            <img className="logo" id="logo" height="auto" width="300px" alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" />
         </Link>
         </div>	 
 

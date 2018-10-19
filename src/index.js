@@ -2,7 +2,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home1 from './pages/home/home1.js';
 import Nav from './components/Nav/nav.js';
 import Home2 from './pages/home/home2.js';
 import Home3 from './pages/home/home3.js';
