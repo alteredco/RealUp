@@ -10,8 +10,8 @@ class Feelings3 extends Component {
     super(props)
     this.state = {
         feelings3Title: "Visualization Exercise",
-        feelings3Txt1: "Imagine feeling incredibly proud of yourself",
-        feelings3Txt2: "Imagine feeling incredibly happy about something",
+        feelings3Txt1: "1. Imagine feeling incredibly proud of yourself",
+        feelings3Txt2: "2. Imagine feeling incredibly happy about something",
         feelings3Instr: "When you're ready, start the 2 minute timer and hold those feelings inside",
         startBtn: "Start",
         results1Btn: "Next",        
@@ -22,10 +22,14 @@ class Feelings3 extends Component {
         <div className="container">
           <div className="row center-align">
               <div><TextLines text={this.state.feelings3Title} /></div>
-              <ol>
+          </div>    
+          <div className="row center-align">
+              <ul className="thoughts3">
                   <li>{this.state.feelings3Txt1}</li>
                   <li>{this.state.feelings3Txt2}</li>
-              </ol>
+              </ul>
+          </div>  
+          <div className="row center-align">  
               <div><TextLines  text={this.state.feelings3Instr} /></div>
               <div><Timer  /></div>
               <div><Link to="/results1"><Button label={this.state.results1Btn}/></Link></div>

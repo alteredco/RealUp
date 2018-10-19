@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import RandQuote from '../../components/RandQuotes/RandQuote';
-import Button from '../../components/Button/Button';
+
 
 class Results3 extends Component {
   constructor(props) {

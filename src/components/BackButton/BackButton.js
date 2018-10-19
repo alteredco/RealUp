@@ -10,8 +10,8 @@ library.add(faArrowLeft)
 // That way we don't have to define them all individually
 
 const BackButton = props => (
-    <a class="btn" className="btn" onClick={props.onClick} id={props.id}>
-  <i class="icon-repeat"><FontAwesomeIcon icon="arrow-left" /></i> {props.label}</a>
+    <a  className="btn" onClick={props.onClick} id={props.id}>
+  <i className="icon-repeat"><FontAwesomeIcon icon="arrow-left" /></i> {props.label}</a>
 );
 
 export default BackButton;
