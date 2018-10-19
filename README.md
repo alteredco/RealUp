@@ -39,14 +39,12 @@ Cypress opens the tests in a browser installed on your system. It's called Test 
 
 - Check the test results form the Test Runner
 
---- Location of the test cases ---
 Test cases can be found from the integration folder.
-
 ```
 cd RealUp/cypress/integration
 ```
 
---- Problems solving ---
+Problems solving:
 If Cypress application will not start, check that you have run: 'npm install' and 'npm start'.
 If Cypress application doesn't open after npm commands, you can try to install it to your local computer
 and try to open again with the following commands:
