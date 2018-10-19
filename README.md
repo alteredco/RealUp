@@ -367,7 +367,7 @@ To Debug:https://geeklearning.io/apache-cordova-and-remote-debugging-on-android/
 Enable debug on device, hook it up to your machine, 
 then when you run the android app you can go to  chrome://inspect/#devices and inspect the console!
 
-## To add a splashscreen
+## To add a splashscreen to cordova
 
 cordova plugin add cordova-plugin-splashscreen
 https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/
