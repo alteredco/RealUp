@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Oct 18 21:10:42 EDT 2018
+#Thu Oct 18 23:16:23 EDT 2018
 5.base=/Users/louise/momscancode/realup/platforms/android/app/build/intermediates/assets/debug
 42.base=/Users/louise/momscancode/realup/platforms/android/app/build/intermediates/assets/debug
 22.path=www/static/js/1.b3ceafc4.chunk.js.map

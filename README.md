@@ -2,6 +2,8 @@
 MomsCanCodepgh Hackathon Application
 
 ### Github repo: https://github.com/alteredco/RealUp.git
+### Heroku: https://git.heroku.com/realupapp.git
+
 
 ### Install latest version of node:
 
@@ -369,3 +371,16 @@ then when you run the android app you can go to  chrome://inspect/#devices and i
 
 cordova plugin add cordova-plugin-splashscreen
 https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/
+
+## Heroku
+```
+git remote add heroku https://git.heroku.com/realupapp.git
+
+git remote -v 
+(check heroku added as repo)
+
+heroku login
+git push heroku master
+```
+
+link to heroku app https://realupapp.herokuapp.com/
