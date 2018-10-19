@@ -25,6 +25,41 @@ Git clone https://github.com/alteredco/RealUp.git
 npm install 
 npm start
 ```
+### Run e2e tests with the Cypress.io
+
+Open the Cypress application
+
+```
+./node_modules/.bin/cypress open
+```
+- Click 'Run all specs' from the Cypress application
+- Test set starts to rolling on Test Runner
+
+Cypress opens the tests in a browser installed on your system. It's called Test Runner: on the left side you can see your test set and on the right side your application to be tested. 
+
+- Check the test results form the Test Runner
+
+--- Location of the test cases ---
+Test cases can be found from the integration folder.
+
+```
+cd RealUp/cypress/integration
+```
+
+--- Problems solving ---
+If Cypress application will not start, check that you have run: 'npm install' and 'npm start'.
+If Cypress application doesn't open after npm commands, you can try to install it to your local computer
+and try to open again with the following commands:
+
+```
+npm install cypress --save-dev
+./node_modules/.bin/cypress open
+``` 
+If test case is red, the next step is to study test from the Test Runner and check why it didn't passed.
+Choose the not passed test from the Test Runner and click the steps through and try to find the reason.
+Test Runner shows each step of the test and you can see the result what has happened in each steps.
+Maybe some of the code has changed and caused a problem or the application has a bug.  
+
 
 ### When adding react / npm components
 
