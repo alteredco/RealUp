@@ -37,7 +37,7 @@ class Nav extends React.Component {
 
          <div className="col">
 		<Link to="/home2">
-            <img class="logo" height="auto" width="300px" alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" />
+            <img class="logo" id="logo" height="auto" width="300px" alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" />
         </Link>
         </div>	 
 
