@@ -17,26 +17,49 @@ class Nav extends React.Component {
     }
 
     goBack(){
-        window.history.back();
+            window.history.back();
     }
     
     render(){
+        
+        
+
+        if ((window.location.pathname !== "/") && (window.location.pathname !== "/home2")) {
+
         return(
 
-    <div className="container">
+        <div className="container">
         <div className="row">
         <div>
             <BackButton label={this.backBtnText} onClick={this.goBack} id={this.id}/>
         </div> 
+
+
+         <div className="col">
+		<Link to="/home2">
+            <img class="logo" height="auto" width="300px" alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" />
+        </Link>
+        </div>	 
+
+        </div>
+        </div>
+
+        );
+        }
+        else {
+            
+        
+        return (
+
+            
         <div className="col">
 		<Link to="/home2">
             <img class="logo" height="auto" width="300px" alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" />
         </Link>
-        </div>	
-    
-        </div>
-        </div>
-    )}
+        </div>	 
+        );  
+        }     
+    }
     
 }
 
