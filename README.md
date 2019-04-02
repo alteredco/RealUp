@@ -60,6 +60,17 @@ Choose the not passed test from the Test Runner and click the steps through and 
 Test Runner shows each step of the test and you can see the result what has happened in each steps.
 Maybe some of the code has changed and caused a problem or the application has a bug.  
 
+### To quickly create android APK file from the repo:
+```
+npm install
+npm run build:cordova
+cordova run android
+```
+Built the following apk(s):
+        /realup/platforms/android/app/build/outputs/apk/debug/app-debug.apk
+Email this apk to android phone user.
+
+For issues go to Android Cordova setup and debug instructions below in readme
 
 ### When adding react / npm components
 
@@ -328,6 +339,7 @@ builds the app by appending tags to index.html which will be needed for cordova 
 cordova platform add android
 
 cordova build android 
+
 --->BUILD SUCCESSFUL in 29s
 46 actionable tasks: 46 executed
 Built the following apk(s):
@@ -371,6 +383,10 @@ then when you run the android app you can go to  chrome://inspect/#devices and i
 
 cordova plugin add cordova-plugin-splashscreen
 https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/
+
+To remove android to re build from fresh
+
+cordova platform remove android
 
 ## Heroku
 ```

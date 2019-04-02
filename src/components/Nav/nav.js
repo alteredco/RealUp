@@ -23,7 +23,7 @@ class Nav extends React.Component {
         
         
 
-        if ((window.location.pathname !== "/") && (window.location.pathname !== "/home2")) {
+        if ((window.location.pathname !== "/") && (window.location.pathname !== "/home2") && (window.location.pathname !== "/android_asset/www/index.html")) {
 
         return(
 
@@ -36,7 +36,7 @@ class Nav extends React.Component {
 
          <div className="col">
 		<Link to="/home2">
-            <img className="logo" id="logo" height="auto" width="300px" alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" />
+            <img className="logo" id="logo" height="auto" width="300px" alt="logo placeholder" src="/android_asset/www/assets/images/RealUpLogo.10.16.png" />
         </Link>
         </div>	 
 
@@ -53,7 +53,7 @@ class Nav extends React.Component {
             
         <div className="col">
 		<Link to="/home2">
-            <img class="logo" height="auto" width="300px" alt="logo placeholder" src="./assets/images/RealUpLogo.10.16.png" />
+            <img class="logo" height="auto" width="300px" alt="logo placeholder" src="/android_asset/www/assets/images/RealUpLogo.10.16.png" />
         </Link>
         </div>	 
         );  
